@@ -10,7 +10,7 @@ previous tasks.
 
 This repository presents an exploration and re-implementation in pytorch of different incremental learning techniques: 
 - **fine-tuning**, consisting of training the same network in subsequent steps adding a
-neuron for each new class to the output layer;
+neuron for each new class to the output layer.
 - **Learning without Forgetting (LwF)** as proposed in the iCaRL paper. This technique envisions, besides the classification loss, a distillation loss which ensures that the discriminative information learned previously is not lost.
 - **iCaRL**. In this framework the network is a trainable feature extractor followed by a single classification layer. A new countermeasure to catastrophic forgetting is introduced: the storage of exemplars, i.e. images from the previously
 encountered classes. For the testing phase iCaRL uses the nearest-mean-of-exemplars
